@@ -1,0 +1,29 @@
+{
+  "description": "Heuristic rule points, not probabilities",
+  "weights": {
+    "Unusually high amount": 20,
+    "Many transactions in a short period": 25,
+    "Repeated failed attempts": 15,
+    "Unusual location": 20,
+    "Duplicate payment pattern": 20,
+    "Unusual transaction hour": 10
+  },
+  "high_amount_quantile": 0.95,
+  "frequency_count": 3,
+  "failed_attempts_threshold": 3,
+  "rare_location_share": 0.05,
+  "unusual_hours": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "flag_threshold": 20,
+  "risk_categories": {
+    "Medium": 20,
+    "High": 40,
+    "Critical": 70
+  }
+}
